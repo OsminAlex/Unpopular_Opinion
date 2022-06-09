@@ -24,7 +24,11 @@
 }
 
 body{
-    background-color:#f5f5f5
+    background-color:#f5f5f5;
+}
+
+footer{
+    background-color: #2f2f2f;
 }
 
 .bg-w{
@@ -42,4 +46,8 @@ body{
 
 #txt-w{
     color: #ffffff !important;
+}
+
+.image-parent {
+    max-width: 40px;
 }

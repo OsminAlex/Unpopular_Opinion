@@ -96,11 +96,21 @@
       <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <button onclick="mostrarModal()" class="btn btn-primary btn-lg fw-bold text-start">
-          <a class="nav-link" href="#">Iniciar Sesion</a>
+          <button type="button" class="btn btn-primary fw-bold" data-bs-toggle="modal" data-bs-target="#modal">
+           Iniciar Sesion
+          </button>
+          <!--No Funciona el Scrip, quien sabe XD-->
+          <!--
+          <a onclick="mostrarModal()" id="input" class="btn btn-primary fw-bold" role="button">Iniciar Sesion</a>
+          -->
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Registrate</a>
+          <a class="btn nav-link" data-bs-toggle="modal" data-bs-target="#modal">
+            Registrarse
+          </a>
+          <!--No Funciona el Scrip, quien sabe XD-->
+          <!--
+          <a onclick="mostrarModal()" class="btn nav-link" >Registrate</a>-->
         </li>
       </ul>
     </div>
@@ -110,10 +120,10 @@
 <div class="container pt-5 bg-w">
   <div class="row">
     <div class="col-md-8">
+      <p><b>Tendencias</b></p>
       <!--Carousel-->
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <p><b>Tendencias</b></p>
+        <div class="carousel-inner" style="margin-top: 50px;">
           <div class="carousel-item active" data-bs-interval="5000">
             <img src="/img/slider/img_01.jpg" width="200px" height="300px" class="rounded  d-block w-100"  alt="imagen 1" id="carousel-b">
           <!--texto-->
@@ -169,52 +179,56 @@
     <!--<div class="col-md-1">
     </div>-->
 
-    <div class="col-md-3 p-2">
+    <div class="col-md-3 p-1" style="margin-left: 50px;">
     <!--Mejor votadas-->
-    <p><b>Mejor Votadas</b></p>
-    <ol class="list-group list-group-numbered">
-      <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Subheading</div>
-          Content for list item
+    <p><b>Amadas por el Publico</b></p>
+          <ul class="list-group rounded" style="border: 2px solid #000000;">
+            <li class="list-group-item d-flex justify-content-between align-items-center fw-bold">
+              Sonic 2
+              <div class="image-parent">
+                  <img src="/img/topm/img_01.jpg" class="img-fluid" alt="Sonic 2">
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center fw-bold">
+             The Batman
+              <div class="image-parent">
+                  <img src="/img/topm/img_02.jpg" class="img-fluid" alt="The Batman">
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center fw-bold">  
+              No Way Home
+              <div class="image-parent">
+                  <img src="/img/topm/img_03.jpg" class="img-fluid" alt="No way homw">
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center fw-bold">  
+              Chip y Dale
+              <div class="image-parent">
+                  <img src="/img/topm/img_04.jpg" class="img-fluid" alt="chip y dale">
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center fw-bold">  
+              Michells vs Machine
+              <div class="image-parent">
+                  <img src="/img/topm/img_05.jpg" class="img-fluid" alt="michelles vs machine">
+            </li>
+          </ul>
+        <!--Fin de mejor votadas-->
         </div>
-        <span class="badge bg-primary rounded-pill">90%</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Subheading</div>
-          Content for list item
-        </div>
-        <span class="badge bg-primary rounded-pill">85%</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Subheading</div>
-          Content for list item
-        </div>
-        <span class="badge bg-primary rounded-pill">80%</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Subheading</div>
-          Content for list item
-        </div>
-        <span class="badge bg-primary rounded-pill">80%</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Subheading</div>
-          Content for list item
-        </div>
-        <span class="badge bg-primary rounded-pill">80%</span>
-      </li>
-    </ol>
+      </div>
+    </div>
+    </div>
+  <!--Segunda seccion-->
+  <div class="container pt-5 bg-w">
+    <p><b>Estrenadas recientemente</b></p>
+    <div class="row">
+      
     </div>
   </div>
-</div>
+
+  <!--Footer-->
+  <footer class="container d-flex pt-5">
+  </footer>
 
 <!--Scrips-->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <script src="/js/index.js"></script>
 
   </body>
